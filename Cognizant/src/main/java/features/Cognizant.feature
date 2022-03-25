@@ -21,4 +21,4 @@ Feature:  Test Cognizant Website
   Scenario: Verify Test Advisory Section
     Given I am on the above page
     When I click on the tab for “Test Advisory”
-    Then I should see a Highlights section noting “$3 mm Cost savings in 3 years”
+    Then I should see a Highlights section noting "$3 mm Cost savings in 3 years"
