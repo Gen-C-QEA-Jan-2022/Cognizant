@@ -30,7 +30,7 @@ public class BaseTest {
         if (browser.equalsIgnoreCase("chrome")){
             WebDriverManager.chromedriver().setup();
             ChromeOptions chromeOptions = new ChromeOptions();
-            chromeOptions.addArguments("-headless");
+            chromeOptions.addArguments("--headless");
             driver = new ChromeDriver(chromeOptions);
         } else {
             System.out.println("Not Defined");
