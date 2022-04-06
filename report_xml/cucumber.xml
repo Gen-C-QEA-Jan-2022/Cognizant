@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="4" time="163.373588">
+<testcase classname="Test Cognizant Website" name="Home Page" time="55.017317">
+<system-out><![CDATA[Given I am on the cognizant.com page........................................passed
+When I search for “QEA”.....................................................passed
+Then I should find a link for “Quality Engineering & Assurance in Digital – Cognizant”.passed
+]]></system-out>
+</testcase>
+<testcase classname="Test Cognizant Website" name="Verify Application Development Testing Section" time="37.56151">
+<system-out><![CDATA[Given I am on the above page................................................passed
+When I click on the tab for “Application Development Testing”...............passed
+Then I should see a Highlights section noting “90% Faster test cycles”......passed
+]]></system-out>
+</testcase>
+<testcase classname="Test Cognizant Website" name="Verify Application Maintenance Testing Section" time="34.633012">
+<system-out><![CDATA[Given I am on the above page................................................passed
+When I click on the tab for “Application Maintenance Testing”...............passed
+Then I should see a Highlights section noting “ZERO Regression defect leakage to UAT”.passed
+]]></system-out>
+</testcase>
+<testcase classname="Test Cognizant Website" name="Verify Test Advisory Section" time="36.161749">
+<system-out><![CDATA[Given I am on the above page................................................passed
+When I click on the tab for “Test Advisory”.................................passed
+Then I should see a Highlights section noting "$3 mm Cost savings in 3 years".passed
+]]></system-out>
+</testcase>
+</testsuite>
