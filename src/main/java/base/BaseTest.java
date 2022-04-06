@@ -18,7 +18,7 @@ public class BaseTest {
     public BaseTest(){
         prop = new Properties();
         try {
-            FileInputStream fis = new FileInputStream(System.getProperty("user.dir") + "\\src\\main\\java\\config\\config.properties");
+            FileInputStream fis = new FileInputStream(System.getProperty("user.dir") + "/src/main/java/config/config.properties");
             prop.load(fis);
         } catch (Exception e){
             e.printStackTrace();
