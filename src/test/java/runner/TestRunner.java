@@ -8,7 +8,7 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        features = "src\\test\\features", //the path of the feature files
+        features = {"src/test/features"}, //the path of the feature file
         glue={"stepdefinitions"}, //the path of the step definition files
         format= {"pretty","html:test-output", "json:report_json/cucumber.json", "junit:report_xml/cucumber.xml"}
 )
