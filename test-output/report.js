@@ -7,7 +7,7 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 7660202000,
+  "duration": 3208569500,
   "status": "passed"
 });
 formatter.scenario({
@@ -37,29 +37,29 @@ formatter.match({
   "location": "CognizantHomePageSteps.i_am_on_the_cognizant_com_page()"
 });
 formatter.result({
-  "duration": 3635740300,
+  "duration": 3156613800,
   "status": "passed"
 });
 formatter.match({
   "location": "CognizantHomePageSteps.i_search_for_QEA()"
 });
 formatter.result({
-  "duration": 4437090200,
+  "duration": 5064280300,
   "status": "passed"
 });
 formatter.match({
   "location": "CognizantHomePageSteps.i_should_find_a_link_for_Quality_Engineering_Assurance_in_Digital_Cognizant()"
 });
 formatter.result({
-  "duration": 98748200,
+  "duration": 91888200,
   "status": "passed"
 });
 formatter.after({
-  "duration": 4172447800,
+  "duration": 671324100,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2390083000,
+  "duration": 2581272100,
   "status": "passed"
 });
 formatter.scenario({
@@ -89,29 +89,29 @@ formatter.match({
   "location": "CognizantSearchPageSteps.i_am_on_the_above_page()"
 });
 formatter.result({
-  "duration": 11041157200,
+  "duration": 11347935100,
   "status": "passed"
 });
 formatter.match({
   "location": "CognizantSearchPageSteps.i_click_on_the_tab_for_Application_Development_Testing()"
 });
 formatter.result({
-  "duration": 445469800,
+  "duration": 408333800,
   "status": "passed"
 });
 formatter.match({
   "location": "CognizantSearchPageSteps.i_should_see_a_Highlights_section_noting_Faster_test_cycles()"
 });
 formatter.result({
-  "duration": 2226134200,
+  "duration": 1404496900,
   "status": "passed"
 });
 formatter.after({
-  "duration": 4176974700,
+  "duration": 806361800,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2926734600,
+  "duration": 2896505000,
   "status": "passed"
 });
 formatter.scenario({
@@ -141,29 +141,29 @@ formatter.match({
   "location": "CognizantSearchPageSteps.i_am_on_the_above_page()"
 });
 formatter.result({
-  "duration": 8923767600,
+  "duration": 9530221300,
   "status": "passed"
 });
 formatter.match({
   "location": "CognizantSearchPageSteps.i_click_on_the_tab_for_Application_Maintenance_Testing()"
 });
 formatter.result({
-  "duration": 555766700,
+  "duration": 323795200,
   "status": "passed"
 });
 formatter.match({
   "location": "CognizantSearchPageSteps.i_should_see_a_Highlights_section_noting_ZERO_Regression_defect_leakage_to_UAT()"
 });
 formatter.result({
-  "duration": 1840499000,
+  "duration": 1870140500,
   "status": "passed"
 });
 formatter.after({
-  "duration": 561549400,
+  "duration": 731118200,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2646195900,
+  "duration": 3188107900,
   "status": "passed"
 });
 formatter.scenario({
@@ -193,14 +193,14 @@ formatter.match({
   "location": "CognizantSearchPageSteps.i_am_on_the_above_page()"
 });
 formatter.result({
-  "duration": 9441593100,
+  "duration": 9724587400,
   "status": "passed"
 });
 formatter.match({
   "location": "CognizantSearchPageSteps.i_click_on_the_tab_for_Test_Advisory()"
 });
 formatter.result({
-  "duration": 1966788500,
+  "duration": 2221029600,
   "status": "passed"
 });
 formatter.match({
@@ -213,11 +213,11 @@ formatter.match({
   "location": "CognizantSearchPageSteps.i_should_see_a_Highlights_section_noting(String)"
 });
 formatter.result({
-  "duration": 94036100,
+  "duration": 75833500,
   "status": "passed"
 });
 formatter.after({
-  "duration": 976287000,
+  "duration": 895813600,
   "status": "passed"
 });
 });

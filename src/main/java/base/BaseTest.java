@@ -31,6 +31,8 @@ public class BaseTest {
             WebDriverManager.chromedriver().setup();
             ChromeOptions chromeOptions = new ChromeOptions();
             chromeOptions.addArguments("--headless");
+            chromeOptions.addArguments("--no-sandbox");
+            chromeOptions.addArguments("--disable-dev-shm-usage");
             driver = new ChromeDriver(chromeOptions);
         } else {
             System.out.println("Not Defined");
