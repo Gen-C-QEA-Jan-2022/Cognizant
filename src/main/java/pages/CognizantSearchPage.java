@@ -6,6 +6,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utils.Constants;
 
+import java.util.concurrent.TimeUnit;
+
 public class CognizantSearchPage extends BaseTest {
 
     @FindBy(xpath="//*[@id='leftSearchDetails']/div[3]/p[1]/a")
@@ -28,11 +30,13 @@ public class CognizantSearchPage extends BaseTest {
     }
     public CognizantQEAPage gotoQEAPage(){
         QEALink.click();
-        try {
-            Thread.sleep(5000);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+        //try {
+        //    Thread.sleep(5000);
+        //} catch (Exception e) {
+         //   e.printStackTrace();
+        //}
+        //driver.manage().timeouts().implicitlyWait(5000, TimeUnit.MILLISECONDS);
+
         return new CognizantQEAPage();
     }
 }
