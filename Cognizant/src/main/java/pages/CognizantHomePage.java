@@ -6,8 +6,6 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class CognizantHomePage extends BaseTest {
-    //init Elements through FindBy
-    // need search element
     @FindBy(xpath="/html/body/div[1]/div/div/div[6]/div/div/ul/li[10]/a")
     WebElement search;
     @FindBy(xpath="//*[@id='tagsChk']")
