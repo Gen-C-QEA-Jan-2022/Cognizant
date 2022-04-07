@@ -1,0 +1,28 @@
+-------------------------------------------------------------------------------
+Test set: runner.TestRunner
+-------------------------------------------------------------------------------
+Tests run: 16, Failures: 0, Errors: 2, Skipped: 1, Time elapsed: 47.273 s <<< FAILURE! - in runner.TestRunner
+Scenario: Verify Application Maintenance Testing Section.When I click on the tab for “Application Maintenance Testing”  Time elapsed: 0.022 s  <<< ERROR!
+org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <h3 class="text-white m0 py1 px-half" data-equalizer-watch="" style="height: 93px;">...</h3> is not clickable at point (747, 1054). Other element would receive the click: <div id="truste-consent-text" class="truste-messageColumn">...</div>
+  (Session info: headless chrome=98.0.4758.102)
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'LTUS155170', ip: '192.168.1.93', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_311'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ea9c5c0efc814f0c73124cb9562e86f1, clickElement {id=a189a477-cc95-4353-8ccf-85847fa2f689}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: C:\Users\955113\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:56823}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56823/devtoo..., se:cdpVersion: 98.0.4758.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (ea9c5c0efc814f0c73124cb9562e86f1)] -> xpath: //*[@id='panel3-label']/h3]
+Session ID: ea9c5c0efc814f0c73124cb9562e86f1
+
+Scenario: Verify Application Maintenance Testing Section  Time elapsed: 0.024 s  <<< ERROR!
+org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <h3 class="text-white m0 py1 px-half" data-equalizer-watch="" style="height: 93px;">...</h3> is not clickable at point (747, 1054). Other element would receive the click: <div id="truste-consent-text" class="truste-messageColumn">...</div>
+  (Session info: headless chrome=98.0.4758.102)
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'LTUS155170', ip: '192.168.1.93', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_311'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ea9c5c0efc814f0c73124cb9562e86f1, clickElement {id=a189a477-cc95-4353-8ccf-85847fa2f689}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: C:\Users\955113\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:56823}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56823/devtoo..., se:cdpVersion: 98.0.4758.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (ea9c5c0efc814f0c73124cb9562e86f1)] -> xpath: //*[@id='panel3-label']/h3]
+Session ID: ea9c5c0efc814f0c73124cb9562e86f1
+

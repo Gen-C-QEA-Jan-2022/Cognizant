@@ -9,20 +9,16 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import utils.Constants;
 
+import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
 public class CognizantHomePage extends BaseTest {
-    @FindBy(xpath="/html/body/div[1]/div/div/div[7]/div[3]")
-    WebElement search;
-    //WebElement search = driver.findElement(By.cssSelector("i[title ='Search']"));
-    //@FindBy(xpath="//*[@id='tagsChk']")
-    //WebElement searchBar;
-    @FindBy(xpath="//*[@id=\"mobsChk\"]")
-    WebElement searchBar;
 
-    //@FindBy(xpath="/html/body/div[1]/div/div/div[6]/div/div/ul/li[10]/ul/li/div[1]/div/h5")
-    //WebElement searchIconInSearchBar;
-    @FindBy(xpath="/html/body/div[1]/div/div/div[4]/div/ul/li[4]/div[6]/div/ul/li/div/div/h5")
+    @FindBy(xpath="/html/body/div[1]/div/div/div[6]/div/div/ul/li[10]/a")
+    WebElement search;
+    @FindBy(xpath="//*[@id='tagsChk']")
+    WebElement searchBar;
+    @FindBy(xpath="/html/body/div[1]/div/div/div[6]/div/div/ul/li[10]/ul/li/div[1]/div/h5")
     WebElement searchIconInSearchBar;
     @FindBy(xpath="//*[@id='leftSearchDetails']/div[3]/p[1]/a")
     WebElement QEALink;
@@ -35,13 +31,12 @@ public class CognizantHomePage extends BaseTest {
     }
 
     public CognizantSearchPage doSearch(){
-        //todo
         //search for "QEA"
-        //should return search page?
+        //should return search page
         search.click();
         searchBar.sendKeys(prop.getProperty("searchOne"));
         searchIconInSearchBar.click();
-        WebDriverWait wait = new WebDriverWait(driver,5);
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
         wait.until(ExpectedConditions.visibilityOf(QEALink));
         return new CognizantSearchPage();
     }

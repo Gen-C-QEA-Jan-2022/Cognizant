@@ -7,9 +7,9 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import utils.Constants;
 
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
+import java.time.Duration;
 import java.util.Properties;
-import java.util.concurrent.TimeUnit;
+
 
 public class BaseTest {
     public static WebDriver driver;
@@ -31,14 +31,13 @@ public class BaseTest {
             WebDriverManager.chromedriver().setup();
             ChromeOptions chromeOptions = new ChromeOptions();
             chromeOptions.addArguments("--headless");
+            chromeOptions.addArguments("--window-size=1920,1080");
             driver = new ChromeDriver(chromeOptions);
         } else {
             System.out.println("Not Defined");
         }
-        driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(Constants.IMPLICITLY_WAIT, TimeUnit.SECONDS);
-        driver.manage().timeouts().pageLoadTimeout(Constants.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
-
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(Constants.IMPLICITLY_WAIT));
+        driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(Constants.PAGE_LOAD_TIMEOUT));
         String cognizantURL = prop.getProperty("baseURL");
     }
 }

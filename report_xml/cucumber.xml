@@ -1,94 +1,27 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="3" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="4" time="44.477281">
-<testcase classname="Test Cognizant Website" name="Home Page" time="10.167226">
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="4" time="49.700671">
+<testcase classname="Test Cognizant Website" name="Home Page" time="9.932458">
 <system-out><![CDATA[Given I am on the cognizant.com page........................................passed
 When I search for “QEA”.....................................................passed
 Then I should find a link for “Quality Engineering & Assurance in Digital – Cognizant”.passed
 ]]></system-out>
 </testcase>
-<testcase classname="Test Cognizant Website" name="Verify Application Development Testing Section" time="11.669486">
-<failure message="org.junit.ComparisonFailure: expected:&lt;[90% Faster test cycles]&gt; but was:&lt;[]&gt;&#13;&#10;&#9;at org.junit.Assert.assertEquals(Assert.java:117)&#13;&#10;&#9;at org.junit.Assert.assertEquals(Assert.java:146)&#13;&#10;&#9;at stepdefinitions.CognizantSearchPageSteps.i_should_see_a_Highlights_section_noting_Faster_test_cycles(CognizantSearchPageSteps.java:45)&#13;&#10;&#9;at ✽.Then I should see a Highlights section noting “90% Faster test cycles”(Cognizant.feature:12)&#13;&#10;"><![CDATA[Given I am on the above page................................................passed
+<testcase classname="Test Cognizant Website" name="Verify Application Development Testing Section" time="13.208035">
+<system-out><![CDATA[Given I am on the above page................................................passed
 When I click on the tab for “Application Development Testing”...............passed
-Then I should see a Highlights section noting “90% Faster test cycles”......failed
-
-StackTrace:
-org.junit.ComparisonFailure: expected:<[90% Faster test cycles]> but was:<[]>
-	at org.junit.Assert.assertEquals(Assert.java:117)
-	at org.junit.Assert.assertEquals(Assert.java:146)
-	at stepdefinitions.CognizantSearchPageSteps.i_should_see_a_Highlights_section_noting_Faster_test_cycles(CognizantSearchPageSteps.java:45)
-	at ✽.Then I should see a Highlights section noting “90% Faster test cycles”(Cognizant.feature:12)
-]]></failure>
+Then I should see a Highlights section noting “90% Faster test cycles”......passed
+]]></system-out>
 </testcase>
-<testcase classname="Test Cognizant Website" name="Verify Application Maintenance Testing Section" time="11.024144">
-<failure message="org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;h3 class=&quot;text-white m0 py1 px-half&quot; data-equalizer-watch=&quot;&quot; style=&quot;height: auto;&quot;&gt;...&lt;/h3&gt; is not clickable at point (376, 565). Other element would receive the click: &lt;a href=&quot;https://www.cognizant.com/cookiepolicy&quot; target=&quot;_blank&quot; id=&quot;truste-cookie-button&quot; style=&quot;cursor:pointer; text-decoration: none;&quot; class=&quot;truste-cookie-link&quot; rel=&quot;noopener noreferrer&quot; new-data-attribute=&quot; &quot;&gt;...&lt;/a&gt;&#10;  (Session info: headless chrome=98.0.4758.102)&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'LTUS155170', ip: '192.168.1.93', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_311'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: C:\Users\955113\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:61683}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: e713fecd2480e36a8a3895448ee2103c&#13;&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)&#13;&#10;&#9;at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#13;&#10;&#9;at java.lang.reflect.Constructor.newInstance(Constructor.java:423)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)&#13;&#10;&#9;at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#13;&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)&#13;&#10;&#9;at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;&#10;&#9;at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;&#10;&#9;at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;&#10;&#9;at java.lang.reflect.Method.invoke(Method.java:498)&#13;&#10;&#9;at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)&#13;&#10;&#9;at com.sun.proxy.$Proxy18.click(Unknown Source)&#13;&#10;&#9;at pages.CognizantQEAPage.clickAppMainTesting(CognizantQEAPage.java:48)&#13;&#10;&#9;at stepdefinitions.CognizantSearchPageSteps.i_click_on_the_tab_for_Application_Maintenance_Testing(CognizantSearchPageSteps.java:50)&#13;&#10;&#9;at ✽.When I click on the tab for “Application Maintenance Testing”(Cognizant.feature:17)&#13;&#10;"><![CDATA[Given I am on the above page................................................passed
-When I click on the tab for “Application Maintenance Testing”...............failed
-Then I should see a Highlights section noting “ZERO Regression defect leakage to UAT”.skipped
-
-StackTrace:
-org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <h3 class="text-white m0 py1 px-half" data-equalizer-watch="" style="height: auto;">...</h3> is not clickable at point (376, 565). Other element would receive the click: <a href="https://www.cognizant.com/cookiepolicy" target="_blank" id="truste-cookie-button" style="cursor:pointer; text-decoration: none;" class="truste-cookie-link" rel="noopener noreferrer" new-data-attribute=" ">...</a>
-  (Session info: headless chrome=98.0.4758.102)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LTUS155170', ip: '192.168.1.93', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_311'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: C:\Users\955113\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:61683}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: e713fecd2480e36a8a3895448ee2103c
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy18.click(Unknown Source)
-	at pages.CognizantQEAPage.clickAppMainTesting(CognizantQEAPage.java:48)
-	at stepdefinitions.CognizantSearchPageSteps.i_click_on_the_tab_for_Application_Maintenance_Testing(CognizantSearchPageSteps.java:50)
-	at ✽.When I click on the tab for “Application Maintenance Testing”(Cognizant.feature:17)
-]]></failure>
+<testcase classname="Test Cognizant Website" name="Verify Application Maintenance Testing Section" time="13.607422">
+<system-out><![CDATA[Given I am on the above page................................................passed
+When I click on the tab for “Application Maintenance Testing”...............passed
+Then I should see a Highlights section noting “ZERO Regression defect leakage to UAT”.passed
+]]></system-out>
 </testcase>
-<testcase classname="Test Cognizant Website" name="Verify Test Advisory Section" time="11.616425">
-<failure message="org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;li class=&quot;text-center mr0 accordion-item accordion-gradient-100&quot; data-accordion-item=&quot;&quot;&gt;...&lt;/li&gt; is not clickable at point (391, 525). Other element would receive the click: &lt;div id=&quot;truste-consent-text&quot; class=&quot;truste-messageColumn&quot;&gt;...&lt;/div&gt;&#10;  (Session info: headless chrome=98.0.4758.102)&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'LTUS155170', ip: '192.168.1.93', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_311'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: C:\Users\955113\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:53549}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: f3ba3cbad0d2856dd294a2508733cae3&#13;&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)&#13;&#10;&#9;at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#13;&#10;&#9;at java.lang.reflect.Constructor.newInstance(Constructor.java:423)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)&#13;&#10;&#9;at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#13;&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)&#13;&#10;&#9;at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;&#10;&#9;at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;&#10;&#9;at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;&#10;&#9;at java.lang.reflect.Method.invoke(Method.java:498)&#13;&#10;&#9;at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)&#13;&#10;&#9;at com.sun.proxy.$Proxy18.click(Unknown Source)&#13;&#10;&#9;at pages.CognizantQEAPage.clickTestAdv(CognizantQEAPage.java:60)&#13;&#10;&#9;at stepdefinitions.CognizantSearchPageSteps.i_click_on_the_tab_for_Test_Advisory(CognizantSearchPageSteps.java:60)&#13;&#10;&#9;at ✽.When I click on the tab for “Test Advisory”(Cognizant.feature:23)&#13;&#10;"><![CDATA[Given I am on the above page................................................passed
-When I click on the tab for “Test Advisory”.................................failed
-Then I should see a Highlights section noting "$3 mm Cost savings in 3 years".skipped
-
-StackTrace:
-org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <li class="text-center mr0 accordion-item accordion-gradient-100" data-accordion-item="">...</li> is not clickable at point (391, 525). Other element would receive the click: <div id="truste-consent-text" class="truste-messageColumn">...</div>
-  (Session info: headless chrome=98.0.4758.102)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LTUS155170', ip: '192.168.1.93', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_311'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: C:\Users\955113\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:53549}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: f3ba3cbad0d2856dd294a2508733cae3
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy18.click(Unknown Source)
-	at pages.CognizantQEAPage.clickTestAdv(CognizantQEAPage.java:60)
-	at stepdefinitions.CognizantSearchPageSteps.i_click_on_the_tab_for_Test_Advisory(CognizantSearchPageSteps.java:60)
-	at ✽.When I click on the tab for “Test Advisory”(Cognizant.feature:23)
-]]></failure>
+<testcase classname="Test Cognizant Website" name="Verify Test Advisory Section" time="12.952756">
+<system-out><![CDATA[Given I am on the above page................................................passed
+When I click on the tab for “Test Advisory”.................................passed
+Then I should see a Highlights section noting "$3 mm Cost savings in 3 years".passed
+]]></system-out>
 </testcase>
 </testsuite>

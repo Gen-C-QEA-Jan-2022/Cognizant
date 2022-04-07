@@ -1,0 +1,4 @@
+stepdefinitions\CognizantQEAPageSteps.class
+stepdefinitions\CognizantSearchPageSteps.class
+stepdefinitions\CognizantHomePageSteps.class
+runner\TestRunner.class

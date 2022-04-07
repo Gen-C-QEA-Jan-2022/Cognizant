@@ -11,6 +11,7 @@ import cucumber.api.java.en.When;
 import pages.CognizantSearchPage;
 import utils.Constants;
 
+import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
 public class CognizantSearchPageSteps extends BaseTest {
@@ -37,6 +38,7 @@ public class CognizantSearchPageSteps extends BaseTest {
     @When("^I click on the tab for “Application Development Testing”$")
     public void i_click_on_the_tab_for_Application_Development_Testing() {
         // Write code here that turns the phrase above into concrete actions
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         cognizantQEAPage.clickAppDevTesting();
     }
 
@@ -47,6 +49,7 @@ public class CognizantSearchPageSteps extends BaseTest {
 
     @When("^I click on the tab for “Application Maintenance Testing”$")
     public void i_click_on_the_tab_for_Application_Maintenance_Testing() {
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         cognizantQEAPage.clickAppMainTesting();
     }
 
