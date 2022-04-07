@@ -30,12 +30,6 @@ public class CognizantSearchPageSteps extends BaseTest {
         cognizantHomePage = new CognizantHomePage();
         cognizantSearchPage = cognizantHomePage.doSearch();
         cognizantQEAPage = cognizantSearchPage.gotoQEAPage();
-
-        //change to wait
-        //try {
-        //    Thread.sleep(5000);
-        //} catch (Exception e) {}
-        //driver.manage().timeouts().implicitlyWait(5000, TimeUnit.MILLISECONDS);
         String expectedTitle = Constants.COGNIZANT_QEA_TITLE;
         Assert.assertEquals(expectedTitle, cognizantQEAPage.getTitle());
     }

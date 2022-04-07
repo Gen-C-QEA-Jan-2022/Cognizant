@@ -1,6 +1,7 @@
 package pages;
 
 import base.BaseTest;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -11,11 +12,17 @@ import utils.Constants;
 import java.util.concurrent.TimeUnit;
 
 public class CognizantHomePage extends BaseTest {
-    @FindBy(xpath="/html/body/div[1]/div/div/div[6]/div/div/ul/li[10]/a")
+    @FindBy(xpath="/html/body/div[1]/div/div/div[7]/div[3]")
     WebElement search;
-    @FindBy(xpath="//*[@id='tagsChk']")
+    //WebElement search = driver.findElement(By.cssSelector("i[title ='Search']"));
+    //@FindBy(xpath="//*[@id='tagsChk']")
+    //WebElement searchBar;
+    @FindBy(xpath="//*[@id=\"mobsChk\"]")
     WebElement searchBar;
-    @FindBy(xpath="/html/body/div[1]/div/div/div[6]/div/div/ul/li[10]/ul/li/div[1]/div/h5")
+
+    //@FindBy(xpath="/html/body/div[1]/div/div/div[6]/div/div/ul/li[10]/ul/li/div[1]/div/h5")
+    //WebElement searchIconInSearchBar;
+    @FindBy(xpath="/html/body/div[1]/div/div/div[4]/div/ul/li[4]/div[6]/div/ul/li/div/div/h5")
     WebElement searchIconInSearchBar;
     @FindBy(xpath="//*[@id='leftSearchDetails']/div[3]/p[1]/a")
     WebElement QEALink;
@@ -34,12 +41,6 @@ public class CognizantHomePage extends BaseTest {
         search.click();
         searchBar.sendKeys(prop.getProperty("searchOne"));
         searchIconInSearchBar.click();
-        //try {
-         //   Thread.sleep(5000);
-        //} catch (Exception e){
-         //   e.printStackTrace();
-        //}
-        //driver.manage().timeouts().implicitlyWait(5000, TimeUnit.MILLISECONDS);
         WebDriverWait wait = new WebDriverWait(driver,5);
         wait.until(ExpectedConditions.visibilityOf(QEALink));
         return new CognizantSearchPage();

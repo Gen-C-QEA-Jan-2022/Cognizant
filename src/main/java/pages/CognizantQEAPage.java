@@ -12,13 +12,15 @@ import utils.Constants;
 import java.util.concurrent.TimeUnit;
 
 public class CognizantQEAPage extends BaseTest {
-    @FindBy(xpath="//*[@id='panel2-label']/h3")
+    //@FindBy(xpath="//*[@id='panel2-label']/h3")
+   // WebElement appDevTesting; //Application Dev Testing
+    @FindBy(xpath="//*[@id='qea-tabs']")
     WebElement appDevTesting; //Application Dev Testing
-
-    @FindBy(xpath="//*[@id='panel3-label']/h3")
+    @FindBy(xpath="//h3[text()='APPLICATION MAINTENANCE TESTING']")
     WebElement appMainTesting; //Application Maintenance Testing
-
-    @FindBy(xpath="//*[@id='panel4-label']/h3")
+    
+    //WebElement appMainTesting = driver.findElement(By.xpath("//h3[text()='APPLICATION MAINTENANCE TESTING']"));
+    @FindBy(xpath="//*[@id='qea-tabs']/li[4]")
     WebElement testAdv; //Test advisory
 
     public CognizantQEAPage(){
@@ -31,32 +33,23 @@ public class CognizantQEAPage extends BaseTest {
 
     public void clickAppDevTesting() {
         appDevTesting.click();
-        //try {
-        //    Thread.sleep(10000);
-        //} catch (Exception e) {}
-        //driver.manage().timeouts().implicitlyWait(10000, TimeUnit.MILLISECONDS);
-
     }
 
     public String verifyAppDevTesting(){
-        //todo
         //I should see a Highlights section noting “90% Faster test cycles”
         WebDriverWait wait = new WebDriverWait(driver,50);
         wait.until(ExpectedConditions.visibilityOf(appDevTesting));
-       return driver.findElement(By.xpath("//*[@id='panel2']/div/div[3]/div/div[2]")).getText();
-
+        return driver.findElement(By.xpath("//p[contains(@class, 'text-white') and text()='Faster test cycles']")).getText();
     }
 
     public void clickAppMainTesting() {
-        appMainTesting.click();
-        //try {
-         //   Thread.sleep(10000);
-        //} catch (Exception e) {}
+        //new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(appMainTesting)).click();
         driver.manage().timeouts().implicitlyWait(10000, TimeUnit.MILLISECONDS);
+        appMainTesting.click();
+        //driver.manage().timeouts().implicitlyWait(10000, TimeUnit.MILLISECONDS);
 
     }
     public String verifyAppMainTesting(){
-        //todo
         //I should see a Highlights section noting “ZERO Regression defect leakage to UAT”
         WebDriverWait wait = new WebDriverWait(driver,50);
         wait.until(ExpectedConditions.visibilityOf(appMainTesting));
@@ -65,18 +58,11 @@ public class CognizantQEAPage extends BaseTest {
 
     public void clickTestAdv() {
         testAdv.click();
-        //try {
-        //    Thread.sleep(10000);
-        //} catch (Exception e) {}
-        //driver.manage().timeouts().implicitlyWait(10000, TimeUnit.MILLISECONDS);
         WebDriverWait wait = new WebDriverWait(driver,60);
         wait.until(ExpectedConditions.visibilityOf(testAdv));
     }
     public String verifyTestAdv(){
-        //todo
         //I should see a Highlights section noting “$3 mm Cost savings in 3 years”
-        //WebDriverWait wait = new WebDriverWait(driver,60);
-        //wait.until(ExpectedConditions.visibilityOf(testAdv));
         return driver.findElement(By.xpath("//*[@id='panel4']/div/div[3]/div/div[2]")).getText();
     }
 }

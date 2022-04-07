@@ -30,13 +30,6 @@ public class CognizantSearchPage extends BaseTest {
     }
     public CognizantQEAPage gotoQEAPage(){
         QEALink.click();
-        //try {
-        //    Thread.sleep(5000);
-        //} catch (Exception e) {
-         //   e.printStackTrace();
-        //}
-        //driver.manage().timeouts().implicitlyWait(5000, TimeUnit.MILLISECONDS);
-
         return new CognizantQEAPage();
     }
 }
