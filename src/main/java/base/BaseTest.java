@@ -24,7 +24,6 @@ public class BaseTest {
             e.printStackTrace();
         }
     }
-
     public static void setupBrowser(){
         String browser = prop.getProperty("browser");
         if (browser.equalsIgnoreCase("chrome")){
@@ -32,12 +31,12 @@ public class BaseTest {
             ChromeOptions chromeOptions = new ChromeOptions();
             chromeOptions.addArguments("--headless");
             chromeOptions.addArguments("--window-size=1920,1080");
+            chromeOptions.addArguments("--lang=en");
             driver = new ChromeDriver(chromeOptions);
         } else {
             System.out.println("Not Defined");
         }
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(Constants.IMPLICITLY_WAIT));
         driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(Constants.PAGE_LOAD_TIMEOUT));
-        String cognizantURL = prop.getProperty("baseURL");
     }
 }

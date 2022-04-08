@@ -7,10 +7,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import utils.Constants;
-
 import java.time.Duration;
-import java.util.concurrent.TimeUnit;
 
 public class CognizantQEAPage extends BaseTest {
     @FindBy(xpath="//*[@id=\"panel2-label\"]/h3")
